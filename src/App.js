@@ -11,30 +11,36 @@ function SearchBar() {
 function Talents(props) {
   const talents = ["John", "Jerry", "Merry"];
   return (
-    <React.Fragment>
-      {talents
-        .filter(talent => talent.search(props.pharse))
-        .map((talent, key) => (
-          <li key={key}>{talent}</li>
-        ))}
-    </React.Fragment>
+    <div>
+      <h2>Talents</h2>
+      <React.Fragment>
+        {talents
+          .filter(talent => !talent.search(props.pharse))
+          .map((talent, key) => (
+            <li key={key}>{talent}</li>
+          ))}
+      </React.Fragment>
+    </div>
   );
 }
 
 function Jobs() {
   const jobs = ["front end", "back end", "full stack"];
   // your code here
+  return <div>
+    <h2>Jobs</h2>
+  </div>;
 }
 
 function App() {
+  let phrase = "";
   return (
-    <Provider store={store}>
-      <div className="App">
-        <h1>JOB MATCHING</h1>
-        <SearchBar />
-        <Talents pharse="J" />
-      </div>
-    </Provider>
+    <div className="App">
+      <h1>JOB MATCHING</h1>
+      <SearchBar />
+      <Talents />
+      <Jobs />
+    </div>
   );
 }
 
