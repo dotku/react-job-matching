@@ -6,7 +6,7 @@ a react based job matching platform
 
 ```bash
 git clone https://github.com/dotku/react-job-matching
-cd react-jobmatching
+cd react-job-matching
 npm install
 npm start
 ```
