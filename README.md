@@ -4,7 +4,6 @@ a react based job matching platform
 
 ## Requirement
 
-- git https://git-scm.com/downloads
 - node https://nodejs.org/en/ 
 
 ## Get Started
