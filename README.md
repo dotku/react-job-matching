@@ -18,6 +18,7 @@ good starting point where we can find the job market demand and career path.
 - Redux
 - GraphQL https://graphql.org
 - node LTS https://nodejs.org/en
+- Travis
 
 You can create your own branch if there might be technology conflict, eg. there
 is Apollo branch which would be alternative solution for python backend.
