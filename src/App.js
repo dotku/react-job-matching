@@ -5,12 +5,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Talents } from "./Talents";
 import { Jobs } from "./Jobs";
+import TopBar from "./components/common/TopBar";
 
 function SearchBar(props) {
-  return <input
-    value={props.phrase}
-    onChange={props.onChange}
-  />;
+  return <input {...props}/>;
 }
 
 function App() {
@@ -21,10 +19,17 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>JOB MATCHING</h1>
-      <SearchBar value={phrase} onChange={handlePhraseChange}/>
-      <Talents phrase={phrase}/>
-      <Jobs />
+      <TopBar />
+      <div className="main">
+        <h1>JOB MATCH</h1>
+        <SearchBar
+          value={phrase} onChange={handlePhraseChange}
+          autoFocus={true}
+        />
+        <Talents phrase={phrase}/>
+        <Jobs />
+      </div>
+
     </div>
   );
 }
