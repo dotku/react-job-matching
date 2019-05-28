@@ -14,6 +14,7 @@ function SearchBar(props) {
 }
 
 function App() {
+  console.log('process.env', process.env);
   const [phrase, setPhrase] = useState("");
   let handlePhraseChange = (e) => {
     console.log(e.target.value);
