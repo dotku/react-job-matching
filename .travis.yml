@@ -5,7 +5,7 @@ install:
   - yarn install
 
 before_script:
-  - travis_wait yarn run build
+  - yarn run build
 
 deploy:
   provider: pages
