@@ -5,7 +5,7 @@ install:
   - yarn install
 
 before_script:
-  - yarn run build
+  - CI=false yarn run build
 
 deploy:
   provider: pages
@@ -18,3 +18,5 @@ deploy:
 
 cache:
   yarn: true
+  directories:
+    - "node_modules"
