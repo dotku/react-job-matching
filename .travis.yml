@@ -1,10 +1,12 @@
 language: node_js
 node_js:
  - "stable"
-cache: yarn
+cache:
+  directories:
+    - node_modules
 before_deploy:
   script:
-    - yarn build
+    - npm run build
 deploy:
   provider: pages
   local_dir: build
