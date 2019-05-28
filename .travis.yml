@@ -1,7 +1,12 @@
 language: node_js
 node_js:
- - "stable"
-before_deploy: yarn run build
+  - "stable"
+install:
+  - yarn install
+
+before_script:
+  - travis_wait yarn run build
+
 deploy:
   provider: pages
   local_dir: build
@@ -10,3 +15,6 @@ deploy:
   keep_history: true
   on:
     branch: master
+
+cache:
+  yarn: true
