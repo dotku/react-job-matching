@@ -1,7 +1,10 @@
 .App {
-  width: 1024px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.App a {
+  text-decoration: none;
 }
 
 .App-logo {

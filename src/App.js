@@ -5,6 +5,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Talents } from "./Talents";
 import { Jobs } from "./Jobs";
+import { Footer } from "./components/common/Footer";
 
 function SearchBar(props) {
   return <input
@@ -22,10 +23,16 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>JOB MATCHING</h1>
-      <SearchBar value={phrase} onChange={handlePhraseChange}/>
-      <Talents phrase={phrase}/>
-      <Jobs />
+      <div className="top"></div>
+      <div className="mainContainer">
+        <h1>JOB MATCHING</h1>
+        <SearchBar value={phrase} onChange={handlePhraseChange}/>
+        <Talents phrase={phrase}/>
+        <Jobs />
+      </div>
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
