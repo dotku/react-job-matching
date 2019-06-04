@@ -16,7 +16,7 @@ const footerStyles = makeStyles({
   },
 });
 
-export function Footer() {
+export default function Footer() {
   const classes = footerStyles();
   return (
     <div className={classnames("Footer", classes.root)}>
