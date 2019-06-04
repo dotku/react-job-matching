@@ -10,14 +10,14 @@ good starting point where we can find the job market demand and career path.
 
 ## Technoloigies
 
-- Python 3.x https://www.python.org/downloads
+- [Python 3.x](https://www.python.org/downloads)
 - JavaScript
 - HTML
 - CSS
 - React
 - Redux
-- GraphQL https://graphql.org
-- node LTS https://nodejs.org/en
+- [GraphQL](https://graphql.org)
+- [node LTS](https://nodejs.org/en)
 - Travis
 
 You can create your own branch if there might be technology conflict, eg. there

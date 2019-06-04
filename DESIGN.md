@@ -33,5 +33,5 @@ In genral, they are helpful, and they tried their best way to serve job seekers.
 
 ## Company
 
-Many companies have their own recuiting system. We might just integrate their 
+Many companies have their own recuiting system. We might just integrate their
 existing recruiting system.
