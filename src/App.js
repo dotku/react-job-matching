@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <div className="top"></div>
-      <div className="mainContainer" style={{minHeight: "calc(100vh - 238px)"}}>
+      <div className="mainContainer" style={{minHeight: "calc(100vh - 239px)"}}>
         <h1>JOB MATCHING</h1>
         <SearchBar value={phrase} onChange={handlePhraseChange}/>
         <Talents phrase={phrase}/>
