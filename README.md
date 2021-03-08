@@ -1,7 +1,6 @@
 # react-job-matching
 
-Use the most cutting edge technologies in the certain domain to constrctut this
-project for practice purpose.
+A private place for job hunter. Let's have a date :)
 
 ## Background
 
